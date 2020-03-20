@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JobMatch</name>
+    </assembly>
+    <members>
+        <member name="T:JobMatch.Employee">
+            <summary>
+            Creates and employee
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employee._UserId">
+            <summary>
+            Gets or sets the user id.
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employee._JobSearchTitle">
+            <summary>
+            Gets or sets the  job search title.
+            </summary>
+        </member>
+        <member name="M:JobMatch.Employee.AcceptOrDeclineJob(System.Int32)">
+            <summary>
+            Accepts or decline job.
+            </summary>
+            <param name="select">The select.</param>
+        </member>
+        <member name="T:JobMatch.Employer">
+            <summary>
+            Creates methods for IEmployer
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employer._EmployerID">
+            <summary>
+            Gets or sets the employer id.
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employer._EmployerName">
+            <summary>
+            Gets or sets the employer name.
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employer._JobOfferTitle">
+            <summary>
+            Gets or sets the job offer title.
+            </summary>
+        </member>
+        <member name="P:JobMatch.Employer._JobRequirments">
+            <summary>
+            Gets or sets the job requirments.
+            </summary>
+        </member>
+        <member name="M:JobMatch.Employer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:JobMatch.Employer"/> class.
+            </summary>
+        </member>
+        <member name="M:JobMatch.Employer.AddId(System.Int32)">
+            <summary>
+            Adds the id.
+            </summary>
+            <param name="id">The id.</param>
+        </member>
+        <member name="M:JobMatch.Employer.AddName(System.String)">
+            <summary>
+            Adds the name.
+            </summary>
+            <param name="name">The name.</param>
+        </member>
+        <member name="M:JobMatch.Employer.AddTitle(System.String)">
+            <summary>
+            Adds the title.
+            </summary>
+            <param name="title">The title.</param>
+        </member>
+        <member name="M:JobMatch.Employer.AddRequirments(System.String)">
+            <summary>
+            Adds the requirments.
+            </summary>
+            <param name="requirments">The requirments.</param>
+        </member>
+        <member name="M:JobMatch.Employer._DisplayAllEmployerInfo">
+            <summary>
+            Creates method for implamentation
+            </summary>
+            <returns>A (int, string, string, string) .</returns>
+        </member>
+        <member name="T:JobMatch.SearchEngine">
+            <summary>
+            Compares Employee prefered Job with Employer Job Title
+            </summary>
+        </member>
+        <member name="M:JobMatch.SearchEngine.AddEmployeeInfo(JobMatch.IEmployee,System.ValueTuple{System.Int32,System.String})">
+            <summary>
+            Adds the employee info.
+            Expected input is userId, SearchTitle
+            </summary>
+            <param name="employee">The employee.</param>
+            <param name="employeeInfo">The employee info.</param>
+        </member>
+        <member name="M:JobMatch.SearchEngine.AddEmployerInfo(JobMatch.IEmployer,System.ValueTuple{System.Int32,System.String,System.String,System.String})">
+            <summary>
+            Adds the employer info.
+            _EmployerID, _EmployerName, _JobOfferTitle, _JobRequirments
+            expected input
+            </summary>
+            <param name="employer">The employer.</param>
+            <param name="employerInfo">The employer info.</param>
+        </member>
+        <member name="M:JobMatch.SearchEngine.PerformSearch">
+            <summary>
+            Performs a search.
+            Same as a run()
+            </summary>
+            <returns>A Tuple.</returns>
+        </member>
+        <member name="M:JobMatch.SearchEngine.GetEmployeeJobTitle">
+            <summary>
+            Gets the employee job title.
+            </summary>
+            <returns>A string.</returns>
+        </member>
+        <member name="M:JobMatch.SearchEngine.GetEmployerJobTitle">
+            <summary>
+            Gets the employer job title.
+            </summary>
+            <returns>A string.</returns>
+        </member>
+        <member name="M:JobMatch.Start.Main(System.String[])">
+            <summary>
+            Main Method
+            </summary>
+            <param name="args">The args.</param>
+            <returns>An int.</returns>
+        </member>
+    </members>
+</doc>
